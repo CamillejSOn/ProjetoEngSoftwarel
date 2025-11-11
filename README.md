@@ -23,14 +23,14 @@ A equipe utilizará o **Notion** para organização do backlog, sprints e tarefa
 
 ## 👥 **Equipe e Papéis**
 
-| Integrante | Papel          | Descrição das Responsabilidades                                                                  A                                                          |
-| ---------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Pessoa 1   | Fullstack / BD | Desenvolvimento do módulo de usuários (cadastro, login, autenticação e controle de sessões). Integração com banco de dados e rotas Flask.                                           |
-| Pessoa 2   | Fullstack / BD | Implementação do módulo de oferta de caronas (CRUD de caronas: criar, editar, excluir e listar). Relacionamento entre motoristas e viagens no banco de dados.                       |
-| Pessoa 3   | Fullstack / BD | Desenvolvimento do módulo de busca e reserva de caronas (consultas SQL, filtragem por cidade, data e horário; reserva de vagas). Integração com frontend.                           |
-| Pessoa 4   | Fullstack / BD | Implementação do módulo de cancelamento e histórico de caronas (usuário pode cancelar reservas ou ver histórico de viagens oferecidas/participadas). Criação de tabelas auxiliares. |
-| Pessoa 5   | Fullstack / BD | Desenvolvimento dos relatórios administrativos (uso do sistema, rotas mais populares, total de usuários ativos). Queries analíticas no banco de dados.                              |
-| Pessoa 6   | Fullstack / BD | Integração geral do sistema, padronização das rotas Flask, configuração inicial do projeto (banco, templates, rotas base) e deploy local.                                           |
+| Integrante              | Papel          | Descrição das Responsabilidades                                                                                                                                                     |
+| ----------              | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Geovanna Paulina        | Backend        | Desenvolvimento do módulo de usuários (cadastro, login, autenticação e controle de sessões). Integração com banco de dados e rotas Flask.                                           |
+| Ana Carolina Ferreira   | Backend        | Implementação do módulo de oferta de caronas (CRUD de caronas: criar, editar, excluir e listar). Relacionamento entre motoristas e viagens no banco de dados.                       |
+| Camille Silva           | Frontend       | Desenvolvimento do módulo de busca e reserva de caronas (consultas SQL, filtragem por cidade, data e horário; reserva de vagas). Integração com frontend.                           |
+| Brenda Mel              | Frontend       | Implementação do módulo de cancelamento e histórico de caronas (usuário pode cancelar reservas ou ver histórico de viagens oferecidas/participadas). Criação de tabelas auxiliares. |
+| Danilo Carvalho         | Fullstack / BD | Desenvolvimento dos relatórios administrativos (uso do sistema, rotas mais populares, total de usuários ativos). Queries analíticas no banco de dados.                              |
+| Lucas Sobrosa           | Fullstack / BD | Integração geral do sistema, padronização das rotas Flask, configuração inicial do projeto (banco, templates, rotas base) e deploy local.                                           |
 
 ---
 
@@ -57,7 +57,7 @@ A equipe utilizará o **Notion** para organização do backlog, sprints e tarefa
 | **2**  | Cadastro e gerenciamento de caronas          | #3 e #4                   | Criar tabela `caronas` com chaves estrangeiras para `usuarios`; rotas CRUD (`/nova_caronas`, `/minhas_caronas`); filtros de busca por origem/destino. |
 | **3**  | Reserva de caronas + cancelamento de reserva | #5 e #7                   | Criar tabela `reservas` (relaciona usuário e carona); rotas `/reservar/<id>` e `/cancelar/<id>`; verificação de vagas disponíveis.                    |
 | **4**  | Histórico de caronas e reservas              | #6 e #8                   | Consultas SQL para listar caronas oferecidas e recebidas; exibição em templates Flask (`historico.html`).                                             |
-| **5**  | Relatórios de uso e rotas populares          | #9 e #10          _       | Query SQL agregadas (`COUNT`, `GROUP BY`, `JOIN`) para gerar estatísticas; rotas `/relatorios` e `/rotas_populares`.                                  |
+| **5**  | Relatórios de uso e rotas populares          | #9 e #10                  | Query SQL agregadas (`COUNT`, `GROUP BY`, `JOIN`) para gerar estatísticas; rotas `/relatorios` e `/rotas_populares`.                                  |
 | **6**  | Integração geral e estrutura do sistema      | Todas de suporte          | Criação da estrutura do projeto Flask (app, models, templates, static); integração entre módulos; conexão e migração inicial do banco.                |
 
 ---
